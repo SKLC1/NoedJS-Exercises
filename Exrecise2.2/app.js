@@ -1,10 +1,10 @@
 const fs = require('fs')
 const errCallback = (err)=>{if(err){(err)=>{console.log(err)}}}
 
-fs.writeFile('./notes.txt','some text',errCallback)
-fs.copyFile('./notes.txt','copy.txt',errCallback)
+fs.writeFileSync('./notes.txt','some text')
+fs.copyFileSync('./notes.txt','./copy.txt')
+fs.rename( 'copy.txt', 'renamed.txt', errCallback)
 getCurrentFilenames();
-fs.rename( 'copy.txt', 'renamedCopyNotes.txt', errCallback)
 
 // console.log(fs.readdirSync(__dirname));
 function getCurrentFilenames(){
