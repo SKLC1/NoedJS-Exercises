@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/SKLC1/NoedJS-Exrecises/issues"
   },
-  "homepage": "https://github.com/SKLC1/NoedJS-Exrecises#readme"
+  "homepage": "https://github.com/SKLC1/NoedJS-Exrecises#readme",
+  "dependencies": {
+    "uniqid": "^5.4.0"
+  }
 }
