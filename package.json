@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/SKLC1/NoedJS-Exrecises#readme",
   "dependencies": {
+    "axios": "^0.27.2",
+    "node-fetch": "^3.2.6",
     "uniqid": "^5.4.0"
   }
 }
