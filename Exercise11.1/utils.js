@@ -15,5 +15,7 @@ export function editNumber(arr,num,numId){
   return newArr
 }
 export function deleteNumber(arr,num){
+  const exist = numbers.find((n)=>n == num)
+  if(!exist) throw new Error('not found')
   return arr.filter(e=>e!= num)
 }
